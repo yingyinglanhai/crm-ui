@@ -1,0 +1,225 @@
+ /**
+ * 通用css样式布局处理
+ * Copyright (c) 2023 fno
+ */
+
+ /** 基础通用 **/
+ .formTitle{
+     text-align: center;
+     font-weight: 900;
+     color: #606266;
+     font-size: 20px;
+ }
+ //卡片表头字体大小
+ .el-card__header{
+     font-size: 14px;
+ }
+
+
+ //.formItemFullWidth{
+ //    width: 100% !important;
+ //}
+
+
+
+ .numberRight{
+     input{
+         text-align: right;
+     }
+ }
+
+
+ // 表单禁用时候，默认的样式文字看不清
+ .el-input.is-disabled .el-input__inner{
+     color: #444 !important;
+ }
+
+ .el-range-editor.is-disabled input{
+     color: #444 !important;
+ }
+
+ .el-textarea.is-disabled .el-textarea__inner{
+     color: #444 !important;
+ }
+
+ //select 组件
+ .el-select .el-tag.el-tag--info {
+     color: #444;
+ }
+
+
+
+ // 单选框，禁用时候样式
+ .el-radio__input.is-disabled.is-checked .el-radio__inner {
+     background-color: #409EFF !important;
+     border-color: #409EFF !important;
+ }
+ .el-radio__input.is-disabled.is-checked .el-radio__inner::after {
+     background-color: #fff !important;
+ }
+ .el-radio__input.is-disabled.is-checked+span.el-radio__label {
+     color: #409EFF !important;
+ }
+ .el-radio__input.is-disabled+span.el-radio__label {
+     color: #444 !important;
+ }
+
+ // 复选框，禁用时候样式
+ .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+     background-color: #409EFF !important;
+     border-color: #409EFF !important;
+ }
+ .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+     border-color: #fff !important;
+ }
+ .el-checkbox__input.is-disabled.is-checked+span.el-checkbox__label {
+     color: #11A983 !important;
+ }
+ .el-checkbox__input.is-disabled+span.el-checkbox__label {
+     color: #444 !important;
+ }
+
+ // 禁用时候disabled时候，文本框的背景色
+ .el-input.is-disabled .el-input__inner{
+     background-color: #f9f9f9 !important;
+ }
+ .el-checkbox__input.is-disabled .el-checkbox__inner{
+     background-color: #f9f9f9 !important;
+ }
+ .el-radio__input.is-disabled .el-radio__inner{
+     background-color: #f9f9f9 !important;
+ }
+ // 禁用disabled的时候，文本域的背景色
+ .el-textarea.is-disabled .el-textarea__inner{
+     background-color: #f9f9f9 !important;
+ }
+
+
+ // 间距
+ .top15{
+     margin-top: 15px;
+ }
+
+// 表单间隙太大
+ .el-form-item {
+     margin-bottom: 14px !important;
+ }
+
+ // 下拉选择和日期选择，没占满空间
+ .el-form-item__content .el-select{
+     width:100% !important;
+ }
+ //表格中的下拉框，没占满空间
+ .cell .el-select{
+     width:100% !important;
+ }
+
+ .el-date-editor{
+     width: 100% !important;
+ }
+
+ // 错误提示距上方高度
+ .el-form-item__error{
+     padding-top: 1px !important;
+ }
+
+
+
+ // 抽屉样式
+ .openForm .el-drawer__body{
+     margin-bottom: 60px;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+
+ .openForm .drawer-footer{
+     padding-left: 120px;
+     padding-top: 10px;
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     background-color: #ffffff;
+     border-top: 1px solid #eeeeee;
+     padding-bottom: 10px;
+ }
+
+
+ .el-table{
+     .el-table__empty-block{
+         border-bottom: 1px solid #EBEEF5;
+         border-right: 1px solid #EBEEF5;
+     }
+ }
+
+ //表格的表头颜色
+ .el-table th.el-table__cell{
+     background-color: #f8f8f8;
+ }
+
+
+ //富文本编辑器，空的时候，placeholder距离顶部高度
+ .w-e-text-placeholder {
+     top: 8px !important;
+ }
+
+
+ //头像 组件，图片不是正方形的时候，会有黑边----只设置了高度100%没有设置宽度
+ .el-avatar>img {
+     width: 100%;
+ }
+
+ // el-table 组件，全选按钮与下面的按钮对齐
+ .el-table--border .el-table__cell:first-child .cell{
+     padding-right: 10px;
+ }
+
+
+ // 树多选，组件高度
+ .vue-treeselect__multi-value{
+     line-height: normal;
+ }
+ .vue-treeselect__multi-value-item-container{
+     line-height: normal;
+ }
+
+ .vue-treeselect--single .vue-treeselect__input{
+     display: block;
+ }
+
+
+ // 弹窗，顶部高度太高
+ .el-dialog__body{
+     padding: 0px 20px 10px 20px;
+ }
+// 弹窗标题字体太大
+ .el-dialog__title{
+     font-size: 15px;
+ }
+
+ // 弹窗header高度
+ .el-dialog__header{
+     margin: 10px 0px;
+     padding: 10px;
+ }
+ .el-dialog__headerbtn{
+     top: 10px;
+ }
+
+ .el-drawer__header{
+     padding: 10px;
+     margin-bottom: 10px;
+     span{
+         font-size: 15px;
+     }
+ }
+
+
+
+
+
+ //通用CSS
+ .elipsis{
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
